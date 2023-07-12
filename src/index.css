@@ -1,0 +1,121 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(https://klike.net/uploads/posts/2019-01/1547368048_12.jpg);
+}
+
+.container{
+  margin-top: 20px;
+  overflow-x: hidden;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  padding: 8px;
+  width: 350px;
+  border: 2px solid #25b59f;
+  border-radius: 15px;
+}
+
+.search-form button {
+  padding: 8px 16px;
+  background-color: #25b59f;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  
+}
+
+.photo-card {
+  width: 300px;
+  height: 200px;
+  margin: 30px;
+  padding: 10px;
+   border: 2px solid #25b59f;
+    border-radius: 15px; 
+}
+
+
+.photo-card img {
+  width: 100%;
+  
+ 
+  margin-bottom: 10px;
+  border-radius: 15px; 
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .load-more {
+  padding: 8px 16px;
+  background-color: #31d371;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+} */
+
+
+
+.info-item {
+  color: #25b59f;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-width: 3px;
+  border-style: dashed solid  solid dotted;
+  border-color: #25b59f #25b59f transparent #25b59f;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 20px;
+  top: 31px;
+  border: 10px solid transparent;
+  border-right-color: #25b59f;
+  transform: rotate(-40deg);
+  
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
